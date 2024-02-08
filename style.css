@@ -1,0 +1,13 @@
+@media only screen and (max-width: 640px) 
+{
+  body 
+  {
+    background-color: rgb(55, 55, 55);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 2fr 1fr;
+  }
+  .shop
+  {
+    width: 130px;
+  }
+}
