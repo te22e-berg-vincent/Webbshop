@@ -47,32 +47,38 @@ body {
   
 }
 
-.sök
-{
-  height: 24vh;
-}
+
 
 main
 {
-  display: flex;
+display: flex;
+justify-content: space-around;
 }
 
 .produktboarder1 {
-justify-content: center;
-border-radius: 15%;
-border-color: black;
+grid-template-columns: 2/3;
+grid-row: 1/2;
+border-radius: 5%;
+border: 2px solid rgb(0, 0, 0);
 align-items: center;
-padding: 10%;
+background-color: rgb(151, 151, 151);
 }
 
-.produktboarder1 img {
-  height: 90%;
-  width: 90%;
-  justify-content: center;
+
+.ost1 img{
+width: auto;
+height: auto;
+border-radius: 8px;
+margin: 1rem;
+
 }
-.pris
+.pris1
 {
-  padding: 5%;
+border: 2px solid black;
+text-align:  center;
+margin-left: 2rem;
+margin-right: 2rem;
+margin-bottom: 0.5rem;
 }
 
 
