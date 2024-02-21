@@ -53,6 +53,7 @@ main
 {
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 }
 
 .produktboarder1 {
@@ -61,7 +62,8 @@ grid-row: 1/2;
 border-radius: 5%;
 border: 2px solid rgb(0, 0, 0);
 align-items: center;
-background-color: rgb(151, 151, 151);
+background-color: rgb(203, 202, 202);
+margin-bottom: 2rem;
 }
 
 
