@@ -56,34 +56,36 @@ justify-content: space-around;
 flex-wrap: wrap;
 }
 
-.produktboarder1 {
-grid-template-columns: 2/3;
-grid-row: 1/2;
+.produktboarder {
+display: flex;
+flex-direction: column;
+align-items: center;
 border-radius: 5%;
 border: 2px solid rgb(0, 0, 0);
-align-items: center;
 background-color: rgb(203, 202, 202);
 margin-bottom: 2rem;
+width: 60%;
 }
 
 
 .ost1 img{
-width: auto;
-height: auto;
 border-radius: 8px;
 margin: 1rem;
+max-width: 50vw;
+max-height: 60vh;
 
 }
 .pris1
 {
-border: 2px solid black;
+
 text-align:  center;
-margin-left: 2rem;
-margin-right: 2rem;
 margin-bottom: 0.5rem;
 }
 
+.shopButton
+{
 
+}
 
 }
 
