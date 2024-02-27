@@ -95,6 +95,54 @@ height: 4vh;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+    
+  }
+  .drop img
+  {
+    height: 99%;
+    width: 99%;
+    justify-content: center;
+  
+  }
+  .dropB
+  {
+    width: 14vw;
+    height: 6vh;
+    background-color: rgb(55, 55, 55);
+
+  }
+  
+  
+  .shop img {
+  
+    height: 99%;
+    width: 99%;
+    justify-content: center;
+
+  }
+  .shopB
+  {
+    width: 14vw;
+    height: 6vh;
+    background-color: rgb(55, 55, 55);
+
+  }
+  
+  .logo img {
+    width: 17vw;
+    height: 7vh;
+    
+  }
+  
+  body{
+    display: grid;
+  }
+
 
 }
 
