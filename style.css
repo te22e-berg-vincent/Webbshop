@@ -53,11 +53,12 @@ p{
 
 
 
-main
+.produkt-grid
 {
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
+
 }
 
 .produktboarder {
@@ -72,7 +73,7 @@ width: 60%;
 }
 
 
-.ost1 img{
+.ost img{
 border-radius: 8px;
 margin: 1rem;
 max-width: 50vw;
@@ -99,8 +100,8 @@ height: 4vh;
     background-color: rgb(55, 55, 55);
     display: flex;
     justify-content: center;
-    padding: 2vw;
-    
+    padding: 4vw;
+    gap: 40px;
   }
   .drop img
   {
@@ -123,7 +124,7 @@ height: 4vh;
     height: 99%;
     width: 99%;
     justify-content: center;
-
+    
   }
   .shopB
   {
@@ -138,12 +139,82 @@ height: 4vh;
     height: 7vh;
     
   }
+  .produktboarder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 5%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(203, 202, 202);
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+
+    height: 30vh;
+    width: 30vw; 
+
+    place-self: center;
+    text-align: center;
+    }
+  }
+  .pris1
+  {
   
-  body{
-    display: grid;
+  text-align:  center;
+  margin-bottom: 1rem;
+  }
+  
+  .shopButton
+  {
+  width: 10vw;
+  height: 4vh;
+  
   }
 
+    #produkt-grid
+    {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+    main .priduktboarder:first-child{
+      grid-column: 1;
+      grid-row: 1;
+     
+    }
+    
+    main .priduktboarder:nth-child(2)
+    {
+      grid-column: 2;
+      grid-row: 1;
+    }
 
+    main .priduktboarder:nth-child(3)
+    {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    main .priduktboarder:nth-child(4)
+    {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    main .priduktboarder:nth-child(5)
+    {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    main .priduktboarder:nth-child(6)
+    {
+      grid-column: 2;
+      grid-row: 3;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
