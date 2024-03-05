@@ -69,9 +69,14 @@ border-radius: 5%;
 border: 2px solid rgb(0, 0, 0);
 background-color: rgb(203, 202, 202);
 margin-bottom: 2rem;
-width: 60%;
+margin-left: 4rem;
+margin-right: 4rem;
+
 }
 
+.sök{
+  margin-top: 1rem;
+}
 
 .ost img{
 border-radius: 8px;
@@ -89,13 +94,15 @@ margin-bottom: 1rem;
 
 .shopButton
 {
-width: 30vw;
-height: 4vh;
-}
+width: 35vw;
+height: 5vh;
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) 
+{
   header {
     background-color: rgb(55, 55, 55);
     display: flex;
@@ -123,8 +130,7 @@ height: 4vh;
   
     height: 99%;
     width: 99%;
-    justify-content: center;
-    
+
   }
   .shopB
   {
@@ -151,26 +157,32 @@ height: 4vh;
     margin-top: 1rem;
     padding-top: 1rem;
 
-    height: 30vh;
-    width: 30vw; 
+    height: auto;
+    width: 35vw; 
 
     place-self: center;
     text-align: center;
     }
-  }
+  
   .pris1
   {
-  
   text-align:  center;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
   }
   
+  .sök{
+    margin-top: 2rem;
+    
+  }
+
   .shopButton
   {
   width: 10vw;
   height: 4vh;
   
   }
+
 
     #produkt-grid
     {
@@ -179,6 +191,7 @@ height: 4vh;
       grid-template-rows: 1fr 1fr 1fr;
       gap: 30px;
       align-items: center;
+      background-color: rgb(55, 55, 55);
     }
     main .priduktboarder:first-child{
       grid-column: 1;
@@ -215,8 +228,167 @@ height: 4vh;
       grid-column: 2;
       grid-row: 3;
     }
-}
+  }
 
 @media only screen and (min-width: 1025px) {
 
+  header {
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw;
+   
+  }
+  .drop img
+  {
+    height: 99%;
+    width: 99%;
+    justify-content: center;
+  
+  }
+  .dropB
+  {
+    width: 14vw;
+    height: 18vh;
+    background-color: rgb(55, 55, 55);
+
+  }
+  
+  
+  .shop img {
+  
+    height: 99%;
+    width: 99%;
+
+  }
+  .shopB
+  {
+    width: 14vw;
+    height: 18vh;
+    background-color: rgb(55, 55, 55);
+
+  }
+  
+  .logo img {
+    width: 17vw;
+    height: 18vh;
+  }
+
+
+
+
+  .produktboarder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 5%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(203, 202, 202);
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+
+    height: auto;
+    width: 25vw; 
+
+    place-self: center;
+    text-align: center;
+    }
+  
+    .pris1
+    {
+    text-align:  center;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    }
+    
+    .sök{
+      margin-top: 2rem;
+      
+    }
+  
+    .shopButton
+    {
+    width: 10vw;
+    height: 8vh;
+    
+  }
+    #produkt-grid
+    {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+      background-color: rgb(55, 55, 55);
+    }
+
+
+
+    main .priduktboarder:first-child{
+      grid-column: 1;
+      grid-row: 1;
+     
+    }
+    
+    main .priduktboarder:nth-child(2)
+    {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    main .priduktboarder:nth-child(3)
+    {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    main .priduktboarder:nth-child(4)
+    {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    main .priduktboarder:nth-child(5)
+    {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    main .priduktboarder:nth-child(6)
+    {
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    .dropB{
+      background-color:rgb(95, 95, 95);
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    .dropB:hover, .dropB:focus{
+      background-color: rgb(92, 92, 92);
+    }
+    .dropDown-Content{
+      display: none;
+      position: absolute;
+      background-color: rgb(92, 92, 92);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropDown-Content a{
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropDown-Content a :hover{
+      background-color: rgb(215, 0, 0);
+    }
+    .show {display:block;}
 }
