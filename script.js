@@ -21,6 +21,6 @@ function displayCart() {
   cartItems.forEach((item) => {
     totalPrice += item.price;
   });
-  totalItemsElement.textContent = `Total Items: ${totalItems}`; //antal varor
-  totalPriceElement.textContent = `Total Price: ${totalPrice.toFixed(2)} kr`; //totala priset
+  totalItemsElement.textContent = `Antal varor: ${totalItems}`; //antal varor
+  totalPriceElement.textContent = `Totala priset: ${totalPrice.toFixed(2)} kr`; //totala priset
 }
