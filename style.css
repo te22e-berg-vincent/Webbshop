@@ -28,14 +28,7 @@
 
 .dropdown:hover .dropbtn {
   background-color: #4c4c4c;
-
-
 }
-
-
-
-
-
 
 .shop {
   position: relative;
@@ -47,9 +40,7 @@
   position: absolute;
   background-color: rgb(172, 171, 171);
   min-width: 14vw;
-  
 }
-
 
 .shop:hover .shop-content {
   display: block;
@@ -61,16 +52,15 @@
 
 @media only screen and (max-width: 767px) {
   header {
-    background-color: rgb(21, 21, 21);
+    background-color: rgb(41, 41, 41);
     display: flex;
     justify-content: space-between;
     padding: 2vw;
   }
 
-
-
   body {
     background-color: rgb(55, 55, 55);
+    font-family: "Merriweather", serif;
   }
 
   h2 {
@@ -145,10 +135,38 @@
     width: 35vw;
     height: 5vh;
   }
+  footer {
+    text-align: center;
+    padding: 3rem;
+    justify-content: center;
+  }
+  .kontakInfo{
+    padding-top: 1rem;
+  }
+  .kontakInfo a{
+    color: black;
+  }
+  .info {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .info a{
+    color: black;      
+  }
+  .info-border{
+    border: 5px solid rgb(55, 55, 55);
+    background-color:  rgb(203, 202, 202);
+    width: 36vw;
+    margin: auto;
+    border-radius: 15%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
- 
+  body {
+    background-color: rgb(41, 41, 41);
+    font-family: "Merriweather", serif;
+  }
   header {
     background-color: rgb(21, 21, 21);
     display: flex;
@@ -199,7 +217,10 @@
     place-self: center;
     text-align: center;
   }
-
+  .ost img {
+    max-width: 16vw;
+    height: 12vh;
+  }
   .pris {
     text-align: center;
     padding-bottom: 1rem;
@@ -252,9 +273,39 @@
     grid-column: 2;
     grid-row: 3;
   }
+  footer {
+    text-align: center;
+    padding: 3rem;
+    justify-content: center;
+  }
+  .kontakInfo{
+    padding-top: 2rem;
+  }
+  .kontakInfo a{
+    color: black;
+  }
+  .info {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .info a{
+    color: black;      
+  }
+  .info-border{
+    border: 5px solid rgb(55, 55, 55);
+    background-color:  rgb(203, 202, 202);
+    width: 20vw;
+    height: 9vh;
+    margin: auto;
+    border-radius: 15%;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
+  body {
+    background-color: rgb(41, 41, 41);
+    font-family: "Merriweather", serif;
+  }
   header {
     background-color: rgb(21, 21, 21);
     display: flex;
@@ -275,7 +326,6 @@
   .shop img {
     height: 99%;
     width: 99%;
-    
   }
   .shopB {
     width: 14vw;
@@ -316,7 +366,10 @@
   .sök {
     margin-top: 2rem;
   }
-
+.ost img {
+  max-width: 16vw;
+  height: 40vh;
+}
   .shopButton {
     width: 10vw;
     height: 8vh;
@@ -358,5 +411,30 @@
   main .priduktboarder:nth-child(6) {
     grid-column: 3;
     grid-row: 2;
+  }
+  footer {
+    text-align: center;
+    padding: 3rem;
+    justify-content: center;
+  }
+  .kontakInfo{
+    padding-top: 1rem;
+  }
+  .kontakInfo a{
+    color: black;
+  }
+  .info {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .info a{
+    color: black;      
+  }
+  .info-border{
+    border: 5px solid rgb(55, 55, 55);
+    background-color:  rgb(203, 202, 202);
+    width: 12vw;
+    margin: auto;
+    border-radius: 15%;
   }
 }
