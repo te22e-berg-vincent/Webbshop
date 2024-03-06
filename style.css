@@ -8,6 +8,7 @@
   position: absolute;
   background-color: rgb(172, 171, 171);
   min-width: 14vw;
+  
   z-index: 1;
 }
 
@@ -114,6 +115,22 @@
     margin-bottom: 2rem;
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 0.65rem;
+  }
+  .shop-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(172, 171, 171);
+    max-width: 16vw;
+    
+  }
+  #clearCartButton{
+    max-width: 16vw;
+    font-size: 0.7rem;
   }
 
   .sök {
