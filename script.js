@@ -13,6 +13,7 @@ function addToCart(itemName, price) {
 }
 function displayCart() {
   // Funktion visar totala andalet varor & priser i kundvagnen
+  const cartElement = document.getElementById('cart');
   const totalItemsElement = document.getElementById("totalItems");
   const totalPriceElement = document.getElementById("totalPrice");
   const totalItems = cartItems.length; //räkna ut antalet varor
@@ -20,6 +21,7 @@ function displayCart() {
   let totalPrice = 0; //räkna ut totala priset
   cartItems.forEach((item) => {
     totalPrice += item.price;
+
   });
   totalItemsElement.textContent = `Antal varor: ${totalItems}`; //antal varor
   totalPriceElement.textContent = `Totala priset: ${totalPrice.toFixed(2)} kr`; //totala priset
@@ -53,3 +55,12 @@ function loadCartFromStorage() {
 
 // Call loadCartFromStorage när sidan laddas
 window.onload = loadCartFromStorage;
+
+function clearCart() {
+  localStorage.removeItem('cartItems');
+  cartItems = [];  // Reset arrayen
+  displayCart();
+}
+
+const clearCartButton = document.getElementById('clearCartButton');
+clearCartButton.addEventListener('click', clearCart);
