@@ -6,7 +6,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(120, 119, 119);
+  background-color: rgb(172, 171, 171);
   min-width: 14vw;
   z-index: 1;
 }
@@ -45,7 +45,7 @@
 .shop-content {
   display: none;
   position: absolute;
-  background-color: rgb(120, 119, 119);
+  background-color: rgb(172, 171, 171);
   min-width: 14vw;
   
 }
