@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="./js/script.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -17,27 +16,31 @@
 // HEADER
 //============================================================================= -->
         <div class="logo">
-            <img src="img/images.png" alt="Logo">
+            <img src="img/images.webp" alt="Logo">
         </div>
         <div class="sök">
             <input type="text" id="sök">
         </div>
-        
-<div class="dropdown">
-    <button class="dropbtn"> <img src="img/drop.png" alt="drop down menyn för flera varor"></button>
-    <div class="dropdown-content">
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-    </div>
-</div>
+
+        <div class="dropdown">
+            <button class="dropbtn"> <img src="img/drop.png" alt="drop down menyn för flera varor"></button>
+            <div class="dropdown-content">
+                <a href="#">Vitmögelost</a>
+                <a href="#">Blåmögelostar</a>
+                <a href="#">Kittostar</a>
+                <a href="#">Färska/smaksatta ostar</a>
+                <a href="#">Hårda dessertostar</a>
+                <a href="#">Getost/ Mixat</a>
+            </div>
+        </div>
         <div class="shop">
             <button class="shopB" onclick="">
                 <img src="img/shop.webp" alt="bild på kundvagnen" />
             </button>
+            <div class="shop-content">
+                <p id="totalItems">Antal varors: 0</p>
+                <p id="totalPrice">Totala priset: 0.00kr</p>
+            </div>
         </div>
     </header>
     <!-- 
@@ -45,120 +48,103 @@
 // PRODUKTER
 //============================================================================= -->
     <main>
-    <div id="produkt-grid">
-      
+        <div id="produkt-grid">
+
             <div class="produktboarder">
-
                 <div class="ost">
-                    <img src="img/ost 1.webp" alt="">
-
-                    <div class="pris1">
+                    <img src="img/ost 1.webp" alt="Bild på vit möggelost">
+                    <div class="items">
                         <h2>Vit möggelost</h2>
                         <p>89 kr/hg</p>
-                        <button class="shopButton">
+                        <button onclick="addToCart('Item 1', 89)" >
                             <p>KÖP</p>
                         </button>
                     </div>
                 </div>
             </div>
-      
 
-      
             <div class="produktboarder">
-
                 <div class="ost">
-                    <img src="img/ost 2.webp" alt="">
-
-                    <div class="pris1">
+                    <img src="img/ost 2.webp" alt="Bild på getost">
+                    <div class="items">
                         <h2>Getost</h2>
                         <p>42 kr/hg</p>
-                        <button class="shopButton">
+                        <button onclick="addToCart('Item 2', 42)" >
                             <p>KÖP</p>
                         </button>
                     </div>
                 </div>
             </div>
-        
 
-      
             <div class="produktboarder">
-
                 <div class="ost">
-                    <img src="img/ost 3.webp" alt="">
-
-                    <div class="pris1">
+                    <img src="img/ost 3.webp" alt="Bild på Gruyere AOP Margot Grottlagrad ost">
+                    <div class="items">
                         <h2>Gruyere AOP Margot Grottlagrad</h2>
                         <p>51 kr/hg</p>
-                        <button class="shopButton">
+                        <button onclick="addToCart('Item 3', 51)" >
                             <p>KÖP</p>
                         </button>
                     </div>
                 </div>
             </div>
-       
 
-   
+
+
             <div class="produktboarder">
-
                 <div class="ost">
-                    <img src="img/ost 4.webp" alt="">
-
-                    <div class="pris1">
+                    <img src="img/ost 4.webp" alt="Bild på kryddost från Boxholm">
+                    <div class="items">
                         <h2>Kryddost från Boxholm</h2>
                         <p>21 kr/hg</p>
-                        <button class="shopButton">
+                        <button onclick="addToCart('Item 4', 21)" >
                             <p>KÖP</p>
                         </button>
                     </div>
                 </div>
             </div>
-       
 
             <div class="produktboarder">
-
                 <div class="ost">
-                    <img src="img/ost 5.webp" alt="">
-
-                    <div class="pris1">
+                    <img src="img/ost 5.webp" alt="Bild på Almnäs Tegel opast ost">
+                    <div class="items">
                         <h2>Almnäs Tegel opast</h2>
                         <p>89 kr/hg</p>
-                        <button class="shopButton">
+                        <button onclick="addToCart('Item 5', 89)" >
                             <p>KÖP</p>
                         </button>
                     </div>
                 </div>
             </div>
-  
 
-       
             <div class="produktboarder">
-
                 <div class="ost">
-                    <img src="img/ost 6.webp" alt="">
-
-                    <div class="pris1">
+                    <img src="img/ost 6.webp" alt="Bild på ost från månen">
+                    <div class="items">
                         <h2>Ost från månen</h2>
                         <p>9874 kr/hg</p>
-                        <button class="shopButton">
+                        <button onclick="addToCart('Item 6', 9874)" >
                             <p>KÖP</p>
                         </button>
                     </div>
                 </div>
             </div>
-       
-    </div>
+
+        </div>
     </main>
     <!-- 
 //=============================================================================
 // KONTAKTINFO
 //============================================================================= -->
-    <footer></footer>
+    <footer>
+        
+    </footer>
 
 
 
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
