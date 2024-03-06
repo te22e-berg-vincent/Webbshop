@@ -1,5 +1,5 @@
-//array som sparar varor 
-let varorna = [];
+//array som sparar varor
+let cartItems = [];
 
 function addToCart(itemName, price) {
   //lägger till vara i kundvagnen
@@ -8,38 +8,48 @@ function addToCart(itemName, price) {
     name: itemName,
     price: price,
   };
-  varorna.push(item); // lägtill vara i array
+  cartItems.push(item); // lägtill vara i array
   displayCart();
 }
 function displayCart() {
   // Funktion visar totala andalet varor & priser i kundvagnen
-  const AntalVarorElement = document.getElementById("AntalVaror");
-  const TotalPrisElement = document.getElementById("TotalPris");
-  const AntalVaror = varorna.length; //räkna ut antalet varor
+  const totalItemsElement = document.getElementById("totalItems");
+  const totalPriceElement = document.getElementById("totalPrice");
+  const totalItems = cartItems.length; //räkna ut antalet varor
 
-  let TotalPris = 0; //räkna ut totala priset
-  varorna.forEach((item) => {
-    TotalPris += item.price;
+  let totalPrice = 0; //räkna ut totala priset
+  cartItems.forEach((item) => {
+    totalPrice += item.price;
   });
-  AntalVarorElement.textContent = `Antal varor: ${AntalVaror}`; //antal varor
-  TotalPrisElement.textContent = `Totala priset: ${TotalPris.toFixed(2)} kr`; //totala priset
-
-
+  totalItemsElement.textContent = `Antal varor: ${totalItems}`; //antal varor
+  totalPriceElement.textContent = `Totala priset: ${totalPrice.toFixed(2)} kr`; //totala priset
 }
-varorna.push(item); // lägg till vara till varorna arrayen
-  displayCart();
-  localStorage.setItem('varorna', JSON.stringify(varorna));
-  function loadCartFromStorage() // Funktion för att hämta varor från storage
-  {
-  const storedvarorna = localStorage.getItem('varorna');
 
-  if (storedvarorna) {
-      const storedItems = JSON.parse(storedvarorna); // uppdatera arrayen
-      varorna = storedItems;
-      displayCart(); // uppdatera cart displayen
+function addToCart(itemName, price) {
+  // Funktion för att lägga till item till varukorg
+  const item = {
+    // detta representerar varan
+    name: itemName,
+    price: price,
+  };
+
+  cartItems.push(item); // lägg till vara till arrayen
+
+  displayCart();
+
+  localStorage.setItem("cartItems", JSON.stringify(cartItems)); // uppdatera local storage med uppdaterad varor
+}
+
+function loadCartFromStorage() {
+  //funktion för att hämta vara från local storage
+  const storedCartItems = localStorage.getItem("cartItems");
+
+  if (storedCartItems) {
+    const storedItems = JSON.parse(storedCartItems);
+    cartItems = storedItems; // uppdatera arrayen
+    displayCart(); // Uppdatera vad kundvagnen visar
   }
 }
 
-// Call loadCartFromStorage on page load
+// Call loadCartFromStorage när sidan laddas
 window.onload = loadCartFromStorage;
-
